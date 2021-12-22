@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container split left">
+        <h2>Standard</h2>
+        <!-- <button class="history-icon"><i class="fal fa-history"></i></button> -->
+        <a></a>
+        <div class="split left">
+            <div class="screen">
+                <div class="previousOperand"></div>
+                <div class="currentOperand">0</div>
+            </div>
+            <div class="calculator">
+                <div class="all_buttons">
+                    <div class="button memory-clear" onclick="clearMemory()">MC</div>
+                    <div class="button memory-add">M+</div>
+                    <div class="button memory-deduct">M-</div>
+                    <div class="button memory-store">MS</div>
+                    <div class="button operation">%</div>
+                    <div class="button last-entity-clear">CE</div>
+                    <div class="button all-clear">C</div>
+                    <div class="button delete">⌫</div>
+                    <div class="button fraction">1/x</div>
+                    <div class="button square">x²</div>
+                    <div class="button root">√x</div>
+                    <div class="button operation">÷</div>
+                    <div class="button number">7</div>
+                    <div class="button number">8</div>
+                    <div class="button number">9</div>
+                    <div class="button operation">x</div>
+                    <div class="button number">4</div>
+                    <div class="button number">5</div>
+                    <div class="button number">6</div>
+                    <div class="button operation">−</div>
+                    <div class="button number">1</div>
+                    <div class="button number">2</div>
+                    <div class="button number">3</div>
+                    <div class="button operation">+</div>
+                    <div class="button plusMinus">+/-</div>
+                    <div class="button number">0</div>
+                    <div class="button number">.</div>
+                    <div class="button equal">=</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="split right">
+        <div style=" display: inline-block;font-size: 30px;" onclick="showLog()">
+            <a href='#'>
+                <div style="margin-left: 50px;  font-size: 20px;">History</div>
+            </a>
+        </div>
+        <div style=" display: inline-block; font-size: 25px;" onclick="showMemory()">
+            <a href='#'>
+                <div style="margin-left:45px; margin-top:2px; font-size: 20px;">Memory</div>
+            </a>
+        </div>
+
+        <div class="storage-container" id="history" style="font-size: 20px;"></div>
+        <div class="clear">
+            <a><input type="image" src="./Images/delete.jpg" style="margin-top: 20px;"alt="delete" width="30" height="30" onclick="resetHistory(),clearMemory()">
+            </a>
+            <!-- <button style="font-size: 20px;" onclick="resetHistory(),clearMemory()">Clear</button>  -->
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+h2 {
+  text-align: left;
+}
+.history-icon {
+  margin-top: 0%;
+  margin-left: 400px;
+  box-sizing: 30px;
+  background-color: gainsboro;
+  top: 32px;
+  right: 32px;
+}
+body {
+  background-color: rgpa(255, 255, 255, 0.75);
+  margin-top: 1rem;
+  width: 840px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.container {
+  width: 900px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.screen {
+  background-color: gainsboro;
+  height: 120px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  position: relative;
+}
+.previousOperand {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.currentOperand {
+  font-size: 35px;
+}
+.all_buttons {
+  color: black;
+  display: grid;
+  border-collapse: collapse;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+.button {
+  border: 1px solid gainsboro;
+  height: 65px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: gainsboro;
+}
+.operation {
+  background-color: whitesmoke;
+}
+.all-clear {
+  background-color: whitesmoke;
+}
+.last-entity-clear {
+  background-color: whitesmoke;
+}
+.delete {
+  background-color: whitesmoke;
+}
+.square {
+  background-color: whitesmoke;
+}
+.root {
+  background-color: whitesmoke;
+}
+.fraction {
+  background-color: whitesmoke;
+}
+.equal {
+  background-color: #7cb9e8;
+}
+.equal:hover {
+  background-color: #3e8ede;
+}
+#history {
+  width: 400px;
+  font-size: 10px;
+  text-align: right;
+  height: 515px;
+  overflow-y: scroll;
+  font-size: 1.1cm;
+  background: whitesmoke;
+  box-sizing: border-box;
+  margin-top: 2px;
+}
+/* #history:hover{
+  background-color: gainsboro;
+ } */
+/* .split-right a:active{
+   background-color: darkcyan;
+ } */
+
+.clear {
+  background-color: whitesmoke;
+  border-width: 5px;
+  font-size: 40px;
+  height: 60px;
+  text-align: right;
+}
+.storage-container {
+  font-size: 10px;
+}
